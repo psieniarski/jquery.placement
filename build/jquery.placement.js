@@ -34,7 +34,7 @@
 	var elementHeight;
 	
 	var _init = function() {	
-		// element 
+
 		$element       = this;
 		margin 		   = settings.margin;
 		include		   = settings.include;
@@ -57,6 +57,7 @@
     
     // returns edge of an element relative to window top edge 	 
 	var getEdge = function() {
+
 		var top     = elementOffset.top; 
 		var bottom  = top + elementHeight;
 		var left    = elementOffset.left;
@@ -72,6 +73,7 @@
 
     // returns distance from element edge (relative to window top edge)  
 	var getDistanceFrom = function() {
+
 		var edge = getEdge();
 		
 		return {
@@ -84,6 +86,7 @@
 
 	// determines location in a window and returns array, example: ['top', 'left']  
 	var location = function() {
+
 		var from 	 = getDistanceFrom();
 		var results  = [];
 
@@ -104,6 +107,7 @@
 	};
 
 	$.fn.placement = function(options) {
+		
 		settings = $.extend(defaults, options);
         
 		if(this.length) {
