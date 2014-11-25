@@ -58,7 +58,7 @@
 	};
     
     // returns edge of an element relative to window top edge 	 
-	var getEdge = function() {
+	var _getEdge = function() {
 
 		var top     = elementOffset.top; 
 		var bottom  = top + elementHeight;
@@ -76,7 +76,7 @@
     // returns distance from element edge (relative to window top edge)  
 	var getDistanceFrom = function() {
 
-		var edge = getEdge();
+		var edge = _getEdge();
 		
 		return {
 			top:    edge.top,

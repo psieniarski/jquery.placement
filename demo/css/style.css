@@ -1,0 +1,38 @@
+body { margin: 0; }
+
+.box {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.center { 
+	left: 0;
+	right: 0;
+	margin: 0 auto; 
+}
+
+.center-center {
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.top    { top: 0; }	
+.right  { right: 0; }
+.bottom { bottom: 0; }
+.left   { left: 0; }
+
+.orange { background: orange; }
+.blue   { background: blue; }
+.red    { background: red; }
+.purple { background: purple; }
+.green  { background: green; }
+.yellow { background: yellow; }
+.khaki  { background: khaki; }
+
+
+.padding-20 { padding: 20px; }
+.margin-20  { margin: 20px;}
