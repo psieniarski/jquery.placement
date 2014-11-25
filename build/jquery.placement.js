@@ -14,8 +14,8 @@
 	var targetWidth;  
 	var targetHeight; 
 	var elementOffset;
-	var widthMethod;
-	var heightMethod;
+	var elementWidth;
+	var elementHeight;
 	var margin; 
 	var padding; 
 	var $element;
