@@ -19,7 +19,7 @@
 		margin: true,	  // compute margins
 		target: document 
 	};
-
+	
 	var margin; 
 	var padding; 
 	
