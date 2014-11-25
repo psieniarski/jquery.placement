@@ -27,7 +27,9 @@
 	var padding; 
 
 	var defaults = {
-
+		padding: false, 
+		margin: false, 
+		target: document
 	};
 
 	var _init = function() {	
