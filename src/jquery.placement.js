@@ -15,8 +15,7 @@
 	// settings
 	var settings;
 	var defaults = {
-		padding: false,    // compute paddings
-		margin: false,	   // compute margins
+		include: 'padding',
 		target: document 
 	};
 
