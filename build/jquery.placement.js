@@ -35,7 +35,7 @@
 	var padding; 
 
 
-	function _init() {	
+	var _init = function() {	
 		// element 
 		$element       = this;
 		margin 		   = settings.margin;
