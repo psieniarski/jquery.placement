@@ -55,7 +55,6 @@
 		targetHeight   = $target.height();
 	};
     
-    // returns edge of an element relative to window top edge 	 
 	var _getEdge = function() {
 
 		var top     = elementOffset.top; 
@@ -70,8 +69,7 @@
 			left:   left
 		};
 	};
-
-    // returns distance from element edge (relative to window top edge)  
+ 
 	var _getDistanceFrom = function() {
 
 		var edge = _getEdge();
@@ -84,7 +82,6 @@
 		};
 	};
 
-	// determines location in a window and returns array, example: ['top', 'left']  
 	var _location = function() {
 
 		var from 	 = _getDistanceFrom();
