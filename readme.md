@@ -1,5 +1,5 @@
 #jQuery.placement plugin
-A jQuery placement plugin that allows us to retrieve position of an element relative to `window` or any DOM object.
+A jQuery placement plugin that allows us to retrieve position of an element relative to `document` or any DOM object.
 ##Simple installation
 Include script after the jQuery library:
 ```html
