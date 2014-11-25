@@ -41,8 +41,8 @@
 		padding		   = settings.padding;
 		elementOffset  = $element.offset();
 
-		elementWidth   = ( padding ) ? $element.outerWidth() : $element.width();
-		elementHeight  = ( padding ) ? $element.outerHeight() : $element.height();
+		elementWidth   = (padding) ? $element.outerWidth() : $element.width();
+		elementHeight  = (padding) ? $element.outerHeight() : $element.height();
 
 		// target 
 		$target 	   = $( settings.target ); 
