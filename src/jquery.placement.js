@@ -115,7 +115,6 @@
 			_init.apply( this );	   
 			console.log( getDistanceFrom() );
 			return location();
-			
 		}
 	};
 })(window, document, jQuery);
