@@ -50,7 +50,6 @@
 			 
 	};
     
-    
     // returns edge of an element relative to window top edge 	 
 	var getEdge = function() {
 		var top     = elementOffset.top; 
@@ -78,7 +77,6 @@
 		};
 	};
 
-	 
 	// determines location in a window and returns array, example: ['top', 'left']  
 	var location = function() {
 		var from 	  = getDistanceFrom();
