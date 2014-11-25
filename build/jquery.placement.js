@@ -40,9 +40,9 @@
     // returns edge of an element relative to window top edge 	 
 	var getEdge = function() {
 		var top     = elementOffset.top; 
-		var bottom  = top + $element[heightMethod].call(this);
+		var bottom  = top + elementHeight;
 		var left    = elementOffset.left;
-		var right   = left + $element[widthMethod].call(this); 
+		var right   = left + elementWidth; 
 
 		return {
 			top:    top,
