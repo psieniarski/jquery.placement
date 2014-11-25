@@ -40,7 +40,7 @@
 		margin 		   = settings.margin;
 		include		   = settings.include;
 		elementOffset  = $element.offset();
-
+		
 		elementWidth = (include === 'padding') ? $element.outerWidth() : $element.width();
 		elementHeight = (include === 'padding') ? $element.outerHeight() : $element.height();
 
