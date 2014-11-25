@@ -27,7 +27,7 @@
 	// settings
 	var defaults = {
 		padding: true, 
-		margin: true, 
+		margin: fakse,
 		target: document
 	};
 
