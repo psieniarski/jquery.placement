@@ -49,6 +49,7 @@
 			elementHeight = $element.height();
 		}
 
+		console.log(elementWidth)
 		// target 
 		$target 	   = $( settings.target ); 
 		targetWidth    = $target.width();
