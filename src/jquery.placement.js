@@ -87,7 +87,7 @@
 	};
 
 	// determines location in a window and returns array, example: ['top', 'left']  
-	var location = function() {
+	var _location = function() {
 
 		var from 	 = _getDistanceFrom();
 		var results  = [];
@@ -116,7 +116,7 @@
 		if( this.length ) {
 			_init.apply( this );	   
 			console.log( _getDistanceFrom() );
-			return location();
+			return _location();
 		}
 	};
 })(window, document, jQuery);
