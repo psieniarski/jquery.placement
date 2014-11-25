@@ -7,14 +7,14 @@
 </head>
 <body>
 	<div id="include-padding" class="red center-center padding-20 box"></div>
-	<div id="include-margin" class="blue left margin-20 box" ></div>
+	<div id="include-margin" class="blue left margin-20 box" style="margin-left: 1000px"></div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>	
 	<script src="../build/jquery.placement.min.js"/></script>
 	<script>
 		$(document).ready(function() {
 			$('.box').html(function(){
-				return $(this).placement({ include: 'padding' }).join(' ');
+				return $(this).placement({ include: '' }).join(' ');
 			});
 		});
 	</script>
