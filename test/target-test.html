@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery.placement example 3</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.15.0.css">
+</head>
+<body>
+	<div id="example3-target">
+		<div class="blue box pull-right"></div>
+		<div class="red box pull-left"></div>
+		<div class="yellow center box"></div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>	
+	<script src="../build/jquery.placement.min.js"/></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.box').html(function(){
+				return $(this).placement({target: '#example3-target'}).join(' ');
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+html, 
+body { height: 100%; }
 body { margin: 0; }
 
 .box {
@@ -25,6 +27,9 @@ body { margin: 0; }
 .bottom { bottom: 0; }
 .left   { left: 0; }
 
+.pull-left  { float: left; }
+.pull-right { float: right; }
+
 .orange { background: orange; }
 .blue   { background: blue; }
 .red    { background: red; }
@@ -33,6 +38,15 @@ body { margin: 0; }
 .yellow { background: yellow; }
 .khaki  { background: khaki; }
 
-
 .padding-20 { padding: 20px; }
 .margin-20  { margin: 20px;}
+
+#example3-target {
+	width: 50%;
+	height: 50%;
+	background: beige;
+}
+
+#example3-target > * {
+	position: static;
+}
