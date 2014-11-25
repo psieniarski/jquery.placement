@@ -40,9 +40,9 @@
 		margin 		   = settings.margin;
 		include		   = settings.include;
 		elementOffset  = $element.offset();
-		
-		elementWidth = (include === 'padding') ? $element.outerWidth() : $element.width();
-		elementHeight = (include === 'padding') ? $element.outerHeight() : $element.height();
+
+		elementWidth   = ( include === 'padding' ) ? $element.outerWidth() : $element.width();
+		elementHeight  = ( include === 'padding' ) ? $element.outerHeight() : $element.height();
 
 		// target 
 		$target 	   = $( settings.target ); 
