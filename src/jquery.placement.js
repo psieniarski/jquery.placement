@@ -9,28 +9,31 @@
 (function(window, document, $, undefined) {
 	'use strict';
 
-
 	// http://benalman.com/news/2012/05/multiple-var-statements-javascript/
 	var version = '0.1.0'; 
 	var settings;
+	
 	// target 
 	var $target; 
 	var targetWidth;  
 	var targetHeight;
+	
 	// element 
 	var $element;
 	var elementOffset;
 	var elementWidth;
 	var elementHeight;
+	
 	// settings
-	var margin; 
-	var padding; 
-
 	var defaults = {
 		padding: false, 
 		margin: false, 
 		target: document
 	};
+
+	var margin; 
+	var padding; 
+
 
 	var _init = function() {	
 		// element 
