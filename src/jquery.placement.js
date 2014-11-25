@@ -15,11 +15,11 @@
 	// settings
 	var settings;
 	var defaults = {
-		padding: true,    // compute paddings
-		margin: true,	  // compute margins
+		padding: false,    // compute paddings
+		margin: false,	  // compute margins
 		target: document 
 	};
-	
+
 	var margin; 
 	var padding; 
 	
