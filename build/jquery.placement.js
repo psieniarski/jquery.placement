@@ -27,7 +27,7 @@
 	// settings
 	var defaults = {
 		padding: true, 
-		margin: false,
+		margin: true,
 		target: document
 	};
 
