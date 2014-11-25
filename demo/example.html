@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example</title>
+	<style>
+		body { margin: 0; }
+		#example {
+			width: 100%;
+			background: orange;
+			padding: 120px;
+		}
+	</style>
+</head>
+<body>
+	<div id="example">top left</div>	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>	
+	<script src="../build/jquery.placement.min.js"/></script>
+	<script>
+		$(document).ready(function() {
+			console.log($('#example').placement('distanceFrom'));
+		});
+	</script>
+</body>
+</html>
