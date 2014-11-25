@@ -79,7 +79,7 @@
 
 	// determines location in a window and returns array, example: ['top', 'left']  
 	var location = function() {
-		var from 	  = getDistanceFrom();
+		var from 	 = getDistanceFrom();
 		var results  = [];
 
 		var compare = function(a, b) {
