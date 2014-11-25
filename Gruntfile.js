@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                 options: {
                   livereload: true
                 },
-                files: ["Gruntfile.js", "src/**"],
+                files: ["Gruntfile.js", "src/**", "readme.md"],
                 tasks: ['clean', 'copy', 'uglify', 'git:add', 'git:commit']
             },
         },
