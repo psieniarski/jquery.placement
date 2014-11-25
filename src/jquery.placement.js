@@ -35,6 +35,7 @@
 	
 	var _init = function() {	
 
+		// element
 		$element       = this;
 		margin 		   = settings.margin;
 		include		   = settings.include;
@@ -107,7 +108,7 @@
 	};
 
 	$.fn.placement = function(options) {
-		
+
 		settings = $.extend(defaults, options);
         
 		if(this.length) {
