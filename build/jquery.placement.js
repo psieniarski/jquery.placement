@@ -9,17 +9,26 @@
 (function(window, document, $, undefined) {
 	'use strict';
 
+
+	// http://benalman.com/news/2012/05/multiple-var-statements-javascript/
 	var version = '0.1.0'; 
-	var settings; 
+	var settings;
+	// target 
+	var $target; 
 	var targetWidth;  
-	var targetHeight; 
+	var targetHeight;
+	// element 
+	var $element;
 	var elementOffset;
 	var elementWidth;
 	var elementHeight;
+	// settings
 	var margin; 
 	var padding; 
-	var $element;
-	var $target; 
+
+	var defaults = {
+
+	};
 
 	var _init = function() {	
 		// element 
@@ -88,13 +97,7 @@
 	};
 
 	$.fn.placement = function(options) {
-		settings = $.extend({
-			// defaults
-			padding: false, 
-			margin: false, 
-			target: document
-
-		},options);
+		settings = $.extend(defaults, options);
         
 		if(this.length) {
 			_init.apply(this);	   

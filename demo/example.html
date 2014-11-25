@@ -5,21 +5,59 @@
 	<title>Example</title>
 	<style>
 		body { margin: 0; }
-		#example {
-			width: 100%;
-			background: orange;
-			padding: 120px;
+
+		.box {
+			position: absolute;
+			width: 100px;
+			height: 100px;
 		}
+		
+		.center { 
+			left: 0;
+			right: 0;
+			margin: 0 auto; 
+		}
+
+		.center-center {
+			margin: auto;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.top    { top: 0; }	
+		.right  { right: 0; }
+		.bottom { bottom: 0; }
+		.left   { left: 0; }
+		
+		.orange { background: orange; }
+		.blue   { background: blue; }
+		.red    { background: red; }
+		.purple { background: purple; }
+		.green  { background: green; }
+		.yellow { background: yellow; }
+		.khaki  { background: khaki; }
+		
 	</style>
 </head>
 <body>
-	<div id="example">top left</div>	
+	<div class="orange top left box"></div>
+	<div class="red top center box"></div>
+	<div class="blue top right box"></div>
+	<div class="purple bottom left box"></div>
+	<div class="green bottom center box"></div>
+	<div class="yellow bottom right box"></div>
+
+	<div class="khaki center-center box"></div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>	
 	<script src="../build/jquery.placement.min.js"/></script>
 	<script>
 		$(document).ready(function() {
-			console.log($('#example').placement('distanceFrom'));
+			$('.box').html(function(){
+				return $(this).placement().join(' ');
+			});
 		});
 	</script>
 </body>
