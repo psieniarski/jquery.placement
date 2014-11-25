@@ -92,6 +92,7 @@
 		var results  = [];
 
 		var compare = function(a, b) {
+
 			if( from[a] < from[b] ) {
 				results.push(a);
 			} else if ( from[a] > from[b] ) {
