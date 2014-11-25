@@ -41,7 +41,7 @@
 		include		   = settings.include;
 		elementOffset  = $element.offset();
 
-		if (include === 'padding') {
+		if ( include === 'padding' ) {
 			elementWidth  = $element.outerWidth(margin);
 			elementHeight = $element.outerHeight(margin);
 		} else {
@@ -50,7 +50,7 @@
 		}
 
 		// target 
-		$target 	   = $(settings.target); 
+		$target 	   = $( settings.target ); 
 		targetWidth    = $target.width();
 		targetHeight   = $target.height();
 			 
@@ -97,23 +97,23 @@
 			} else if ( from[a] > from[b] ) {
 				results.push(b);
 			} else {
-				results.push('center');
+				results.push( 'center' );
 			}
 		};
 
-		compare('top', 'bottom');
-		compare('left', 'right');
+		compare( 'top', 'bottom' );
+		compare( 'left', 'right' );
 
 		return results;
 	};
 
 	$.fn.placement = function(options) {
 
-		settings = $.extend(defaults, options);
+		settings = $.extend( defaults, options );
         
-		if(this.length) {
-			_init.apply(this);	   
-			console.log(getDistanceFrom());
+		if( this.length ) {
+			_init.apply( this );	   
+			console.log( getDistanceFrom() );
 			return location();
 			
 		}
