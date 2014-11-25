@@ -41,7 +41,7 @@
 		include		   = settings.include;
 		elementOffset  = $element.offset();
 
-		if ( include === 'padding' ) {
+		if ( include === 'padding' || include === 'margin') {
 			elementWidth  = $element.outerWidth(margin);
 			elementHeight = $element.outerHeight(margin);
 		} else {
