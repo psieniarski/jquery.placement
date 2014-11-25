@@ -15,12 +15,12 @@
 	// settings
 	var settings;
 	var defaults = {
-		include: 'padding',
+		padding: true,
 		target: document 
 	};
 
 	var margin; 
-	var include; 
+	var padding; 
 	
 	// target 
 	var $target; 
@@ -38,11 +38,11 @@
 		// element
 		$element       = this;
 		margin 		   = settings.margin;
-		include		   = settings.include;
+		padding		   = settings.padding;
 		elementOffset  = $element.offset();
 
-		elementWidth   = ( include === 'padding' ) ? $element.outerWidth() : $element.width();
-		elementHeight  = ( include === 'padding' ) ? $element.outerHeight() : $element.height();
+		elementWidth   = ( padding ) ? $element.outerWidth() : $element.width();
+		elementHeight  = ( padding ) ? $element.outerHeight() : $element.height();
 
 		// target 
 		$target 	   = $( settings.target ); 
