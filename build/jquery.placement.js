@@ -74,7 +74,7 @@
 	};
 
     // returns distance from element edge (relative to window top edge)  
-	var getDistanceFrom = function() {
+	var _getDistanceFrom = function() {
 
 		var edge = _getEdge();
 		
@@ -89,7 +89,7 @@
 	// determines location in a window and returns array, example: ['top', 'left']  
 	var location = function() {
 
-		var from 	 = getDistanceFrom();
+		var from 	 = _getDistanceFrom();
 		var results  = [];
 
 		var compare = function(a, b) {
@@ -115,7 +115,7 @@
         
 		if( this.length ) {
 			_init.apply( this );	   
-			console.log( getDistanceFrom() );
+			console.log( _getDistanceFrom() );
 			return location();
 		}
 	};
