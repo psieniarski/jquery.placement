@@ -15,7 +15,7 @@
 	// settings
 	var settings;
 	var defaults = {
-		include: '',
+		include: 'padding',
 		target: document 
 	};
 
