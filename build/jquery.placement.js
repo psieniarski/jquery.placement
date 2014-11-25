@@ -53,7 +53,6 @@
 		$target 	   = $( settings.target ); 
 		targetWidth    = $target.width();
 		targetHeight   = $target.height();
-			 
 	};
     
     // returns edge of an element relative to window top edge 	 
