@@ -96,10 +96,7 @@
 		compare( 'top', 'bottom' );
 		compare( 'left', 'right' );
 
-		return {
-			x: results[0],
-			y: results[1]
-		};
+		return results;
 	};
 
 	$.fn.placement = function(options) {
