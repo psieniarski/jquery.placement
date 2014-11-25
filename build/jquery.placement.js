@@ -42,9 +42,11 @@
 		elementOffset  = $element.offset();
 
 		if ( include === 'padding' ) {
+
 			elementWidth  = $element.outerWidth(margin);
 			elementHeight = $element.outerHeight(margin);
 		} else {
+			
 			elementWidth  = $element.width();
 			elementHeight = $element.height();
 		}
