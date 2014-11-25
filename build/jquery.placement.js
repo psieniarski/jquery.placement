@@ -40,7 +40,7 @@
 		padding		   = settings.include;
 		elementOffset  = $element.offset();
 
-		if (include == 'padding') {
+		if (include === 'padding') {
 			elementWidth  = $element.outerWidth(margin)
 			elementHeight = $element.outerHeight(margin);
 		} else {
