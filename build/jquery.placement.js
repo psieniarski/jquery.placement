@@ -17,6 +17,7 @@
 	var widthMethod;
 	var heightMethod;
 	var margin; 
+	var padding; 
 	var $element;
 	var $target; 
 
