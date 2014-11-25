@@ -41,13 +41,8 @@
 		include		   = settings.include;
 		elementOffset  = $element.offset();
 
-		if ( include === 'padding' ) {
-			elementWidth  = $element.outerWidth();
-			elementHeight = $element.outerHeight();
-		} else {
-			elementWidth  = $element.width();
-			elementHeight = $element.height();
-		}
+		elementWidth = (include === 'padding') ? $element.outerWidth() : $element.width();
+		elementHeight = (include === 'padding') ? $element.outerHeight() : $element.height();
 
 		// target 
 		$target 	   = $( settings.target ); 
