@@ -37,7 +37,7 @@
 		// element 
 		$element       = this;
 		margin 		   = settings.margin;
-		padding		   = settings.include;
+		include		   = settings.include;
 		elementOffset  = $element.offset();
 
 		if (include === 'padding') {
