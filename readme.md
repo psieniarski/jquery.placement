@@ -15,7 +15,7 @@ default *true*
 ##Example usage
 ```javascript
 $('selector').placement({
-    target: '#parent',   
+    target: 'selector',   
     padding: true     // include paddings  
 });
 ```
