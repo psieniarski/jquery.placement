@@ -30,23 +30,32 @@ body { margin: 0; }
 .pull-left  { float: left; }
 .pull-right { float: right; }
 
-.orange { background: orange; }
-.blue   { background: blue; }
-.red    { background: red; }
-.purple { background: purple; }
-.green  { background: green; }
+.orange { background: #FC440F; }
+.blue   { background: #003F91; }
+.red    { background: #A72E16; }
+.purple { background: #200116; }
+.green  { background: #AFFC41; }
 .yellow { background: yellow; }
 .khaki  { background: khaki; }
 
 .padding-20 { padding: 20px; }
 .margin-20  { margin: 20px;}
 
-#example3-target {
+#target {
+	position: relative;	
 	width: 50%;
 	height: 50%;
-	background: beige;
+	background: #D0DB97;
 }
 
-#example3-target > * {
+#target:after {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	content: '#target';
+
+}
+
+#target > * {
 	position: static;
 }

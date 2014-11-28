@@ -14,8 +14,9 @@ default *true*
 
 ##Example usage
 ```javascript
-$('selector').placement({
-    target: 'selector',   
-    padding: true     // include paddings  
+$(document).ready(function() {
+	$('.box').html(function(){
+		return $(this).placement({target: '#target'}).join(' ');
+	});
 });
 ```
