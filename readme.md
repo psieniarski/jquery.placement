@@ -8,8 +8,10 @@ Include script after the jQuery library:
 ##Options
 
 * `target` object or string
-default *window* object
+
+default *document* object
 * `padding` boolean 
+
 default *true* 
 
 ##Example usage
