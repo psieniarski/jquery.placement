@@ -13,6 +13,7 @@ default *window* object
 default *true* 
 
 ##Example usage
+![usage example](https://raw.githubusercontent.com/psieniarski/jquery.placement/master/demo/img/usage-example.png)
 ```javascript
 $(document).ready(function() {
 	$('.box').html(function(){
