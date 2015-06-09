@@ -13,7 +13,7 @@ default *document* object
 default *true* 
 
 ##Example usage
-![usage example](https://raw.githubusercontent.com/psieniarski/jquery.placement/master/demo/img/usage-example.png)
+![usage example](https://raw.githubusercontent.com/psieniarski/jquery.placement/master/test/img/usage-example.png)
 ```javascript
 $(document).ready(function() {
 	$('.box').html(function(){
